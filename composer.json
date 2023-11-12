@@ -79,7 +79,9 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts"
+            "@auto-scripts",
+            "php bin/console importmap:install",
+            "php bin/console asset-map:compile"
         ],
         "post-update-cmd": [
             "@auto-scripts"
