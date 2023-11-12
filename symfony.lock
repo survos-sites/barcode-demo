@@ -61,9 +61,6 @@
     "survos/core-bundle": {
         "version": "1.5.77"
     },
-    "survos/deployment-bundle": {
-        "version": "dev-sy64"
-    },
     "symfony/asset-mapper": {
         "version": "6.4",
         "recipe": {
