@@ -81,8 +81,7 @@
         },
         "post-install-cmd": [
             "@auto-scripts",
-            "php bin/console importmap:install",
-            "php bin/console asset-map:compile"
+            "php bin/console importmap:install"
         ],
         "post-update-cmd": [
             "@auto-scripts"
