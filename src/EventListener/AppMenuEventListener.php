@@ -8,10 +8,9 @@ use Survos\BootstrapBundle\Traits\KnpMenuHelperTrait;
 use Symfony\Component\EventDispatcher\Attribute\AsEventListener;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 
-#[AsEventListener(event: KnpMenuEvent::NAVBAR_MENU_EVENT, method: 'navbarMenu')]
-#[AsEventListener(event: KnpMenuEvent::SIDEBAR_MENU_EVENT, method: 'sidebarMenu')]
-#[AsEventListener(event: KnpMenuEvent::PAGE_MENU_EVENT, method: 'pageMenu')]
-#[AsEventListener(event: KnpMenuEvent::FOOTER_MENU_EVENT, method: 'footerMenu')]
+#[AsEventListener(event: KnpMenuEvent::NAVBAR_MENU, method: 'navbarMenu')]
+#[AsEventListener(event: KnpMenuEvent::PAGE_MENU, method: 'pageMenu')]
+#[AsEventListener(event: KnpMenuEvent::FOOTER_MENU, method: 'footerMenu')]
 final class AppMenuEventListener implements KnpMenuHelperInterface
 {
     use KnpMenuHelperTrait;
@@ -35,12 +34,6 @@ public function navbarMenu(KnpMenuEvent $event): void
         // $this->addMenuItem($nestedMenu, ['route' => 'survos_base_credits', 'rp' => ['type' => $type], 'label' => ucfirst($type)]);
         $this->addMenuItem($nestedMenu, ['uri' => "#$type", 'label' => ucfirst($type)]);
     }
-}
-
-public function sidebarMenu(KnpMenuEvent $event): void
-{
-    $menu = $event->getMenu();
-    $options = $event->getOptions();
 }
 
 public function footerMenu(KnpMenuEvent $event): void

@@ -18,7 +18,7 @@ class AppController extends AbstractController
     {
     }
 
-    #[Route('/', name: 'app_app')]
+    #[Route('/', name: 'app_homepage')]
     public function index(Request $request, ProductRepository $productRepository): Response
     {
         $string = $request->get('q', 'abcdefg');
