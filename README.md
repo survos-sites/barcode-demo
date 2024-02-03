@@ -2,7 +2,7 @@
 
 Demonstrates survos/barcode-bundle, also uses survos/bootstrap-bundle and survos/scraper-bundle
 
-See the demo https://barcode.survos.com/
+See the demo https://barcode-demo.survos.com/
 
 ## Clone 
 

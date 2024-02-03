@@ -1,36 +1,35 @@
 {
-  "name": "barcode-demo",
-  "description": "A simple app that uses the survos/barcode-bundle",
-  "keywords": [
-    "php",
-    "symfony"
-  ],
-  "repository": "https://github.com/michaelshobbs/node-js-sample",
-  "scripts": {
-    "dokku": {
-      "predeploy": "bin/console importmap:install && bin/console asset-map:compile",
-      "postdeploy": ""
-    }
-  },
-  "env": {
-    "SECRET_TOKEN": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "value": "secret"
+    "name": "barcode",
+    "description": "A repo, maybe get this from github",
+    "keywords": [
+        "php",
+        "symfony"
+    ],
+    "repository": "https:\/\/github.com\/survos-sites\/barcode",
+    "scripts": {
+        "dokku": {
+            "predeploy": "bin\/console importmap:install && bin\/console asset-map:compile",
+            "postdeploy": ""
+        }
     },
-    "WEB_CONCURRENCY": {
-      "description": "The number of processes to run.",
-      "generator": "echo 5"
-    }
-  },
-  "image": "gliderlabs/herokuish",
-  "addons": [
-    "dokku-postgres",
-    "dokku-redis"
-  ],
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-php.git"
-    }
-  ]
+    "env": {
+        "SECRET_TOKEN": {
+            "description": "A secret key for verifying the integrity of signed cookies.",
+            "value": "secret"
+        },
+        "WEB_CONCURRENCY": {
+            "description": "The number of processes to run.",
+            "generator": "echo 5"
+        }
+    },
+    "image": "gliderlabs\/herokuish",
+    "addons": [
+        "dokku-postgres",
+        "dokku-redis"
+    ],
+    "buildpacks": [
+        {
+            "url": "https:\/\/github.com\/heroku\/heroku-buildpack-php.git"
+        }
+    ]
 }
-
