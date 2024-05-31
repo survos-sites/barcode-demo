@@ -9,11 +9,15 @@ See the demo https://barcode-demo.survos.com/
 ```bash
 git clone git@github.com:survos-sites/barcode-demo.git && cd barcode-demo
 composer install
-# without docker, uses sqlite
 bin/console doctrine:schema:update --force --complete
 
 symfony server:start -d
-
+symfony open:local 
+symfony open:local --path="/internal/health"
+read -p "press any key to delete the database" -n 1 -s
+rm products.db
+symfony open:local 
+symfony open:local --path="/internal/health"
 
 ```
 

@@ -17,4 +17,5 @@ return [
     Knp\Bundle\MenuBundle\KnpMenuBundle::class => ['all' => true],
     Survos\BootstrapBundle\SurvosBootstrapBundle::class => ['all' => true],
     Survos\DeploymentBundle\SurvosDeploymentBundle::class => ['all' => true],
+    OpenConext\MonitorBundle\OpenConextMonitorBundle::class => ['all' => true],
 ];
