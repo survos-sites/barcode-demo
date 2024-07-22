@@ -22,8 +22,8 @@ survos_bootstrap:
 
 
   app:
-    code: my-app
-    abbr: <b>my</b>App
+    code: barcode
+    abbr: <b>barcode</b>Demo
   options:
     # consider https://startbootstrap.com/previews/simple-sidebar as another theme
     theme: bootswatch
