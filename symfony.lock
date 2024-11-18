@@ -46,18 +46,6 @@
             "tests/bootstrap.php"
         ]
     },
-    "survos/barcode-bundle": {
-        "version": "1.5",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "main",
-            "version": "1.0",
-            "ref": "19dfaed39754601b1ee9cc8e64cd0dee85a4ddfe"
-        },
-        "files": [
-            "config/packages/survos_barcode.yaml"
-        ]
-    },
     "survos/bootstrap-bundle": {
         "version": "1.5.77"
     },
@@ -259,6 +247,18 @@
         "files": [
             "config/packages/twig.yaml",
             "templates/base.html.twig"
+        ]
+    },
+    "symfony/ux-icons": {
+        "version": "2.20",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.17",
+            "ref": "803a3bbd5893f9584969ab8670290cdfb6a0a5b5"
+        },
+        "files": [
+            "assets/icons/symfony.svg"
         ]
     },
     "symfony/ux-twig-component": {
