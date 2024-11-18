@@ -29,6 +29,18 @@
     "knplabs/knp-menu-bundle": {
         "version": "v3.2.0"
     },
+    "nyholm/psr7": {
+        "version": "1.8",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "4a8c0345442dcca1d8a2c65633dcf0285dd5a5a2"
+        },
+        "files": [
+            "config/packages/nyholm_psr7.yaml"
+        ]
+    },
     "openconext/monitor-bundle": {
         "version": "4.3.0"
     },
@@ -46,8 +58,23 @@
             "tests/bootstrap.php"
         ]
     },
+    "survos/barcode-bundle": {
+        "version": "1.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "19dfaed39754601b1ee9cc8e64cd0dee85a4ddfe"
+        },
+        "files": [
+            "config/packages/survos_barcode.yaml"
+        ]
+    },
     "survos/bootstrap-bundle": {
         "version": "1.5.77"
+    },
+    "survos/bunny-bundle": {
+        "version": "1.5.382"
     },
     "survos/core-bundle": {
         "version": "1.5.77"
