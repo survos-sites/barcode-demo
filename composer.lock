@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b64f224f95e24bc0b5c19b0e37eea5fb",
+    "content-hash": "bb2656f4e3e2e8c19ad4219a5b124bd2",
     "packages": [
         {
             "name": "composer/semver",
@@ -10331,6 +10331,72 @@
             "time": "2020-09-28T06:39:44+00:00"
         },
         {
+            "name": "survos/command-bundle",
+            "version": "1.5.417",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/survos/SurvosCommandBundle.git",
+                "reference": "2581e9069c06289c7c5ca67beabb46e826c07b36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/survos/SurvosCommandBundle/zipball/2581e9069c06289c7c5ca67beabb46e826c07b36",
+                "reference": "2581e9069c06289c7c5ca67beabb46e826c07b36",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.3",
+                "symfony/config": "^6.4 || ^7.1",
+                "symfony/console": "^6.4 || ^7.1",
+                "symfony/dependency-injection": "^6.4 || ^7.1",
+                "symfony/form": "^6.4 || ^7.1",
+                "symfony/framework-bundle": "^6.4 || ^7.1",
+                "symfony/http-kernel": "^6.4 || ^7.1",
+                "twig/twig": "^3.4",
+                "zenstruck/console-extra": "^1.4"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^2.0",
+                "phpunit/phpunit": "^11.4",
+                "symfony/messenger": "^6.4 || ^7.1",
+                "symfony/test-pack": "^1.0",
+                "symfony/yaml": "^6.4 || ^7.1"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Survos\\CommandBundle\\": "src/",
+                    "Survos\\CommandBundle\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tac Tacelosky",
+                    "email": "tacman@gmail.com"
+                }
+            ],
+            "description": "Run Symfony console commands from a web interface",
+            "keywords": [
+                "cli",
+                "symfony-console"
+            ],
+            "support": {
+                "issues": "https://github.com/survos/SurvosCommandBundle/issues",
+                "source": "https://github.com/survos/SurvosCommandBundle/tree/1.5.417"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/kbond",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-11-29T15:36:34+00:00"
+        },
+        {
             "name": "symfony/browser-kit",
             "version": "v7.2.0",
             "source": {
@@ -10919,7 +10985,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.2",
+        "php": "^8.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-imagick": "*",
