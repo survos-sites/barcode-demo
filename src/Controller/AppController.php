@@ -37,17 +37,5 @@ class AppController extends AbstractController
         ]);
     }
 
-    #[Route('/{generatorCode}/demo', name: 'app_demo')]
-    #[Template('/app/demo.html.twig')]
-    public function demo(string $generatorCode, BarcodeService $barcodeService)
-    {
-        $generatorClass = $barcodeService->getGeneratorClass($generatorCode);
-        return [
-            'imageFormat' => $barcodeService->getImageFormat($generatorClass),
-            'generatorCode' => $generatorCode,
-            'generatorClass' => $generatorClass,
-            'types' => $barcodeService->getGeneratorTypes()
-        ];
-    }
 
 }

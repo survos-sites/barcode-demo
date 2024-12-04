@@ -22,9 +22,9 @@
                 </td>
                 {% for shortName, generator in generators %}
                     <td>
-                        {% set barcodeData = barcode(product.name, generator_class=generator.class) %}
-                        {% if generator.imageFormat %}
-                            <img src='data:{{ generator.imageFormat }};base64,{{ barcodeData }}' />
+                        {% set barcodeData = barcode(product.name, generator_class=shortName) %}
+                        {% if generator.image_format %}
+                            <img src='data:{{ generator.image_format }};base64,{{ barcodeData }}' />
                         {% else %}
                             {{ barcodeData|raw }}
                         {% endif %}

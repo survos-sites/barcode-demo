@@ -23,3 +23,8 @@
 /public/assets/
 /assets/vendor
 ###< symfony/asset-mapper ###
+
+
+###> survos/flickr-bundle ###
+/flickr-downloads
+###< survos/flickr-bundle ###
