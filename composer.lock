@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4429adfcf81aa00c0c688546228f9073",
+    "content-hash": "b64f224f95e24bc0b5c19b0e37eea5fb",
     "packages": [
         {
             "name": "composer/semver",
@@ -2696,7 +2696,7 @@
         },
         {
             "name": "survos/deployment-bundle",
-            "version": "1.5.417",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/survos/SurvosDeploymentBundle.git",
@@ -2726,6 +2726,7 @@
                 "symfony/twig-bundle": "^6.4 || ^7.1",
                 "symfony/var-dumper": "^6.4 || ^7.1"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -10912,7 +10913,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "survos/deployment-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

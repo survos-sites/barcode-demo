@@ -32,4 +32,11 @@ return [
     'jsbarcode' => [
         'version' => '3.11.6',
     ],
+    '@tabler/core' => [
+        'version' => '1.0.0-beta21',
+    ],
+    '@tabler/core/dist/css/tabler.min.css' => [
+        'version' => '1.0.0-beta21',
+        'type' => 'css',
+    ],
 ];
