@@ -29,4 +29,7 @@ return [
         'version' => '5.3.3',
         'type' => 'css',
     ],
+    'jsbarcode' => [
+        'version' => '3.11.6',
+    ],
 ];
