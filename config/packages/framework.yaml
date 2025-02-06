@@ -26,8 +26,8 @@ when@dev:
     router:
         # change to the IP if not using symfony proxy (symfony proxy:domain:attach barcode)
         default_uri: 'https://barcode.wip/'
-
-
+#
+#
 when@test:
     framework:
         test: true
