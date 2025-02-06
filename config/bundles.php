@@ -21,4 +21,5 @@ return [
     Survos\BarcodeBundle\SurvosBarcodeBundle::class => ['all' => true],
     Survos\CommandBundle\SurvosCommandBundle::class => ['dev' => true],
     Bizkit\VersioningBundle\BizkitVersioningBundle::class => ['all' => true],
+    Pierstoval\SmokeTesting\SmokeTestingBundle::class => ['dev' => true, 'test' => true],
 ];

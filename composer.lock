@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb2656f4e3e2e8c19ad4219a5b124bd2",
+    "content-hash": "e461068f405ce1855721e682eb9e1850",
     "packages": [
         {
             "name": "bizkit/versioning-bundle",
@@ -9410,6 +9410,51 @@
             "time": "2024-12-05T13:48:26+00:00"
         },
         {
+            "name": "pierstoval/smoke-testing",
+            "version": "dev-dynamic-host-scheme",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pierstoval/SmokeTesting.git",
+                "reference": "d2d568cc58d053681dc42daf461c56299a89373a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pierstoval/SmokeTesting/zipball/d2d568cc58d053681dc42daf461c56299a89373a",
+                "reference": "d2d568cc58d053681dc42daf461c56299a89373a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "symfony/framework-bundle": "^6.1|^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6|^10.0",
+                "symfony/maker-bundle": "^1.43"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Pierstoval\\SmokeTesting\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Rock Ancelet",
+                    "email": "pierstoval@gmail.com"
+                }
+            ],
+            "description": "Smoke testing automator for Symfony applications",
+            "support": {
+                "issues": "https://github.com/Pierstoval/SmokeTesting/issues",
+                "source": "https://github.com/Pierstoval/SmokeTesting/tree/dynamic-host-scheme"
+            },
+            "time": "2025-01-04T13:25:00+00:00"
+        },
+        {
             "name": "sebastian/cli-parser",
             "version": "1.0.2",
             "source": {
@@ -11022,6 +11067,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "pierstoval/smoke-testing": 20,
         "survos/deployment-bundle": 20
     },
     "prefer-stable": true,

@@ -58,6 +58,9 @@
             "tests/bootstrap.php"
         ]
     },
+    "pierstoval/smoke-testing": {
+        "version": "v1.1.0"
+    },
     "survos/barcode-bundle": {
         "version": "1.5",
         "recipe": {
