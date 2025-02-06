@@ -9,10 +9,22 @@ See the demo https://barcode-demo.survos.com/
 ```bash
 git clone git@github.com:survos-sites/barcode-demo.git && cd barcode-demo
 composer install
-bin/console doctrine:schema:update --force --complete
-
+bin/console doctrine:schema:update --force
+bin/console app:load-products
 symfony server:start -d
 symfony open:local 
+```
+
+Now test.  It uses the same database for dev and test, but for completeness you can reload
+```bash
+bin/console doctrine:schema:update --force --env=test
+bin/console app:load-products --env=test
+vendor/bin/phpunit --testdox-text=testdox.txt
+cat testdox.txt
+symfony open:local --path="/info"
+```
+
+
 symfony open:local --path="/internal/health"
 read -p "press any key to delete the database" -n 1 -s
 rm products.db
