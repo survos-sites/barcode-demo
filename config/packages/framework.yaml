@@ -20,12 +20,13 @@ framework:
 
     router:
         # ...
-        default_uri: 'https://barcode-demo.survos.com/'
-
-when@dev:
-    router:
-        # change to the IP if not using symfony proxy (symfony proxy:domain:attach barcode)
+#        default_uri: 'https://barcode-demo.survos.com/'
         default_uri: 'https://barcode.wip/'
+
+#when@dev:
+#    router:
+#        # change to the IP if not using symfony proxy (symfony proxy:domain:attach barcode)
+#        default_uri: 'https://barcode.wip/'
 #
 #
 when@test:
@@ -33,9 +34,9 @@ when@test:
         test: true
         session:
             storage_factory_id: session.storage.factory.mock_file
-        router:
-            # change to the IP if not using symfony proxy (symfony proxy:domain:attach barcode)
-            default_uri: 'https://barcode.wip/'
+#        router:
+#            # change to the IP if not using symfony proxy (symfony proxy:domain:attach barcode)
+#            default_uri: 'https://barcode.wip/'
 
     #esi: true
     #fragments: true
