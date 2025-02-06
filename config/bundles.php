@@ -19,6 +19,6 @@ return [
     OpenConext\MonitorBundle\OpenConextMonitorBundle::class => ['all' => true],
     Symfony\UX\Icons\UXIconsBundle::class => ['all' => true],
     Survos\BarcodeBundle\SurvosBarcodeBundle::class => ['all' => true],
-    Survos\CommandBundle\SurvosCommandBundle::class => ['all' => true],
+    Survos\CommandBundle\SurvosCommandBundle::class => ['dev' => true],
     Bizkit\VersioningBundle\BizkitVersioningBundle::class => ['all' => true],
 ];
