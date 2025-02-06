@@ -20,4 +20,5 @@ return [
     Symfony\UX\Icons\UXIconsBundle::class => ['all' => true],
     Survos\BarcodeBundle\SurvosBarcodeBundle::class => ['all' => true],
     Survos\CommandBundle\SurvosCommandBundle::class => ['all' => true],
+    Bizkit\VersioningBundle\BizkitVersioningBundle::class => ['all' => true],
 ];

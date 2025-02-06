@@ -22,7 +22,8 @@ class LoadProductsCommand extends Command
 
     public function __construct(
         private ProductRepository $productRepository,
-        private EntityManagerInterface $entityManager, string $name = null)
+        private EntityManagerInterface $entityManager,
+        ?string $name = null)
     {
         parent::__construct($name);
     }
