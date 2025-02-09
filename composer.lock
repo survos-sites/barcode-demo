@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e461068f405ce1855721e682eb9e1850",
+    "content-hash": "ca928e5927aa9a7a64dd75be841c8b17",
     "packages": [
         {
             "name": "bizkit/versioning-bundle",
@@ -2479,7 +2479,7 @@
         },
         {
             "name": "survos/barcode-bundle",
-            "version": "1.5.500",
+            "version": "1.5.503",
             "source": {
                 "type": "git",
                 "url": "https://github.com/survos/BarcodeBundle.git",
@@ -2544,7 +2544,7 @@
             "description": "Integrates picqer/php-barcode-generator in a Symfony application",
             "support": {
                 "issues": "https://github.com/survos/BarcodeBundle/issues",
-                "source": "https://github.com/survos/BarcodeBundle/tree/1.5.500"
+                "source": "https://github.com/survos/BarcodeBundle/tree/1.5.503"
             },
             "funding": [
                 {
@@ -2556,16 +2556,16 @@
         },
         {
             "name": "survos/bootstrap-bundle",
-            "version": "1.5.500",
+            "version": "1.5.503",
             "source": {
                 "type": "git",
                 "url": "https://github.com/survos/BootstrapBundle.git",
-                "reference": "6d4bb16ce53209ce7967747124b0d48b1092927b"
+                "reference": "6579b2e4cbc36a939cad3bc362ba7065efe5c1b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/survos/BootstrapBundle/zipball/6d4bb16ce53209ce7967747124b0d48b1092927b",
-                "reference": "6d4bb16ce53209ce7967747124b0d48b1092927b",
+                "url": "https://api.github.com/repos/survos/BootstrapBundle/zipball/6579b2e4cbc36a939cad3bc362ba7065efe5c1b2",
+                "reference": "6579b2e4cbc36a939cad3bc362ba7065efe5c1b2",
                 "shasum": ""
             },
             "require": {
@@ -2643,7 +2643,7 @@
             ],
             "support": {
                 "issues": "https://github.com/survos/BootstrapBundle/issues",
-                "source": "https://github.com/survos/BootstrapBundle/tree/1.5.500"
+                "source": "https://github.com/survos/BootstrapBundle/tree/1.5.503"
             },
             "funding": [
                 {
@@ -2651,11 +2651,11 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-30T02:59:43+00:00"
+            "time": "2025-02-06T17:13:43+00:00"
         },
         {
             "name": "survos/core-bundle",
-            "version": "1.5.500",
+            "version": "1.5.503",
             "source": {
                 "type": "git",
                 "url": "https://github.com/survos/SurvosCoreBundle.git",
@@ -2732,7 +2732,7 @@
             ],
             "support": {
                 "issues": "https://github.com/survos/SurvosCoreBundle/issues",
-                "source": "https://github.com/survos/SurvosCoreBundle/tree/1.5.500"
+                "source": "https://github.com/survos/SurvosCoreBundle/tree/1.5.503"
             },
             "funding": [
                 {
@@ -2792,7 +2792,7 @@
             ],
             "support": {
                 "issues": "https://github.com/survos/SurvosDeploymentBundle/issues",
-                "source": "https://github.com/survos/SurvosDeploymentBundle/tree/1.5.500"
+                "source": "https://github.com/survos/SurvosDeploymentBundle/tree/1.5.503"
             },
             "funding": [
                 {
@@ -9411,16 +9411,16 @@
         },
         {
             "name": "pierstoval/smoke-testing",
-            "version": "dev-dynamic-host-scheme",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Pierstoval/SmokeTesting.git",
-                "reference": "d2d568cc58d053681dc42daf461c56299a89373a"
+                "reference": "ffd832c5ac08f6969cf9dfd194316b15ede49be0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pierstoval/SmokeTesting/zipball/d2d568cc58d053681dc42daf461c56299a89373a",
-                "reference": "d2d568cc58d053681dc42daf461c56299a89373a",
+                "url": "https://api.github.com/repos/Pierstoval/SmokeTesting/zipball/ffd832c5ac08f6969cf9dfd194316b15ede49be0",
+                "reference": "ffd832c5ac08f6969cf9dfd194316b15ede49be0",
                 "shasum": ""
             },
             "require": {
@@ -9450,9 +9450,9 @@
             "description": "Smoke testing automator for Symfony applications",
             "support": {
                 "issues": "https://github.com/Pierstoval/SmokeTesting/issues",
-                "source": "https://github.com/Pierstoval/SmokeTesting/tree/dynamic-host-scheme"
+                "source": "https://github.com/Pierstoval/SmokeTesting/tree/v1.1.1"
             },
-            "time": "2025-01-04T13:25:00+00:00"
+            "time": "2025-02-06T15:51:28+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -10419,16 +10419,16 @@
         },
         {
             "name": "survos/command-bundle",
-            "version": "1.5.500",
+            "version": "1.5.503",
             "source": {
                 "type": "git",
                 "url": "https://github.com/survos/SurvosCommandBundle.git",
-                "reference": "2581e9069c06289c7c5ca67beabb46e826c07b36"
+                "reference": "9ca5ef50142bb0744ae9274afbf1b3cfe4ec4dc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/survos/SurvosCommandBundle/zipball/2581e9069c06289c7c5ca67beabb46e826c07b36",
-                "reference": "2581e9069c06289c7c5ca67beabb46e826c07b36",
+                "url": "https://api.github.com/repos/survos/SurvosCommandBundle/zipball/9ca5ef50142bb0744ae9274afbf1b3cfe4ec4dc7",
+                "reference": "9ca5ef50142bb0744ae9274afbf1b3cfe4ec4dc7",
                 "shasum": ""
             },
             "require": {
@@ -10445,6 +10445,7 @@
             "require-dev": {
                 "phpstan/phpstan": "^2.0",
                 "phpunit/phpunit": "^11.4",
+                "rector/rector": "^2.0",
                 "symfony/messenger": "^6.4 || ^7.1",
                 "symfony/test-pack": "^1.0",
                 "symfony/yaml": "^6.4 || ^7.1"
@@ -10473,7 +10474,7 @@
             ],
             "support": {
                 "issues": "https://github.com/survos/SurvosCommandBundle/issues",
-                "source": "https://github.com/survos/SurvosCommandBundle/tree/1.5.500"
+                "source": "https://github.com/survos/SurvosCommandBundle/tree/1.5.503"
             },
             "funding": [
                 {
@@ -10481,7 +10482,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-29T15:36:34+00:00"
+            "time": "2025-02-08T12:05:04+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -11067,7 +11068,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "pierstoval/smoke-testing": 20,
         "survos/deployment-bundle": 20
     },
     "prefer-stable": true,
