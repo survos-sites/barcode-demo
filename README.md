@@ -9,6 +9,10 @@ See the demo https://barcode-demo.survos.com/
 ```bash
 git clone git@github.com:survos-sites/barcode-demo.git && cd barcode-demo
 composer install
+bin/console make:smoke-tests 
+php -l tests/FunctionalTest.php 
+
+
 bin/console doctrine:schema:update --force
 bin/console app:load-products
 symfony server:start -d

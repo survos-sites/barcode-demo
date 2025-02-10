@@ -1,6 +1,6 @@
 <?php
 
-namespace App\EventListener;
+namespace App\Menu;
 
 use Survos\BootstrapBundle\Event\KnpMenuEvent;
 use Survos\BootstrapBundle\Traits\KnpMenuHelperInterface;
@@ -8,12 +8,13 @@ use Survos\BootstrapBundle\Traits\KnpMenuHelperTrait;
 use Symfony\Component\EventDispatcher\Attribute\AsEventListener;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 
-final class AppMenuEventListener implements KnpMenuHelperInterface
+final class AppMenu implements KnpMenuHelperInterface
 {
     use KnpMenuHelperTrait;
 
     // this should be optional, not sure we really need it here.
-    public function __construct(private ?AuthorizationCheckerInterface $security = null)
+    public function __construct(
+        private ?AuthorizationCheckerInterface $security = null)
     {
     }
 
@@ -42,11 +43,4 @@ final class AppMenuEventListener implements KnpMenuHelperInterface
         $this->add($menu, uri: 'https://github.com');
     }
 
-// this could also be called the content menu, as it's below the navbar, e.g. a menu for an entity, like show, edit
-    #[AsEventListener(event: KnpMenuEvent::PAGE_MENU)]
-    public function pageMenu(KnpMenuEvent $event): void
-    {
-        $menu = $event->getMenu();
-        $options = $event->getOptions();
-    }
 }
