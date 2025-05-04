@@ -28,6 +28,7 @@ class Product
 
     public function setName(string $name): static
     {
+        dd($name);
         $this->name = $name;
 
         return $this;

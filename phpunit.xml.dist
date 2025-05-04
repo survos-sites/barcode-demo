@@ -17,7 +17,23 @@
     <server name="KERNEL_CLASS" value="App\Kernel" />
     <server name="APP_ENV" value="test" force="true"/>
     <server name="APP_DEBUG" value="false"/> <!-- set this to false on your CI to speed up tests by 2x -->
+    <server name="BROWSER_ALWAYS_START_WEBSERVER" value="1"/>
+
   </php>
+
+  <coverage includeUncoveredFiles="true"
+            pathCoverage="false"
+            ignoreDeprecatedCodeUnits="true"
+            disableCodeCoverageIgnore="true">
+    <!-- ... -->
+  </coverage>
+
+<!--  <coverage includeUncoveredFiles="true">-->
+<!--    <include>-->
+<!--      <directory suffix=".php">src</directory>-->
+<!--    </include>-->
+<!--  </coverage>-->
+
 
   <testsuites>
     <testsuite name="all">

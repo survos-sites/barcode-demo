@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+{% endblock %}
+{% block xbody %}
 
     <h1>Barcode Bundle Demo</h1>
     <table class="table">
@@ -13,11 +15,10 @@
         </tr>
         </thead>
         <tbody>
-        {% for product in products %}
+        {% for product in products|slice(0,0) %}
             <tr>
-                <td>{{ product.name }}</td>
-                <td>
-                    {{ product.id }}
+                <td>{{ product.name }}
+                    <sup><code>{{ product.id }}</code></sup>
                 </td>
                 {% for shortName, generatorData in generators %}
                     <td>

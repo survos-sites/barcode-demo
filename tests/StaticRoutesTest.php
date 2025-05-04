@@ -18,7 +18,7 @@ class StaticRoutesTest extends WebTestCase
 	#[TestWith(['GET', 'https://barcode.wip/internal/health', 'monitor.internal_health'])]
 	#[TestWith(['GET', 'https://barcode.wip/info', 'monitor.info'])]
 	#[TestWith(['GET', 'https://barcode.wip/internal/info', 'monitor.internal_info'])]
-	#[TestWith(['GET', 'https://barcode.wip/', 'app_homepage'])]
+	#[TestWith(['GET', '/', 'app_homepage'])]
 	public function testRoute(string $method, string $url, string $route): void
 	{
 		$this->runFunctionalTest(
