@@ -22,4 +22,6 @@ return [
     Survos\CommandBundle\SurvosCommandBundle::class => ['dev' => true],
     Bizkit\VersioningBundle\BizkitVersioningBundle::class => ['all' => true],
     Pierstoval\SmokeTesting\SmokeTestingBundle::class => ['dev' => true, 'test' => true],
+    Survos\KeyValueBundle\SurvosKeyValueBundle::class => ['all' => true],
+    Survos\CrawlerBundle\SurvosCrawlerBundle::class => ['all' => true],
 ];
