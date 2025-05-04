@@ -12,6 +12,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\PropertyAccess\PropertyAccessor;
 
 #[AsCommand(
     name: 'app:load-products',
@@ -36,30 +37,23 @@ function configure(): void
         ->addOption('option1', null, InputOption::VALUE_NONE, 'Option description');
 }
 
-protected
-function execute(InputInterface $input, OutputInterface $output): int
+protected function execute(InputInterface $input, OutputInterface $output): int
 {
     $io = new SymfonyStyle($input, $output);
-    $arg1 = $input->getArgument('arg1');
-
-    if ($arg1) {
-        $io->note(sprintf('You passed an argument: %s', $arg1));
-    }
-
-    if ($input->getOption('option1')) {
-        // ...
-    }
-
     foreach (['Rock', 'Paper', 'Scissors'] as $name) {
-        if (!$this->productRepository->findOneBy(['name' => $name])) {
+        if (!$product = $this->productRepository->findOneBy(['name' => $name])) {
             $product = (new Product())
                 ->setName($name);
             $this->entityManager->persist($product);
         }
-
+//        if ($product->getName() !== $product->getId()) {}
     }
-
     $this->entityManager->flush();
+    // hack for testing getters
+    $accessor = new PropertyAccessor();
+    foreach (['id','name'] as $property) {
+        $accessor->getValue($product, $property);
+    }
 
     $io->success(sprintf("%d products loaded", $this->entityManager->getRepository(Product::class)->count([])));
 

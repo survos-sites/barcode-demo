@@ -1,0 +1,16 @@
+{
+    "|App\\Entity\\User|https://barcode.wip/": {
+        "/": {
+            "path": "/",
+            "seen": true,
+            "depth": 0,
+            "linkStatus": null,
+            "username": null,
+            "route": "app_homepage",
+            "rp": null,
+            "statusCode": 200,
+            "foundOn": null,
+            "memory": null
+        }
+    }
+}

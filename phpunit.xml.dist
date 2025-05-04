@@ -25,15 +25,7 @@
             pathCoverage="false"
             ignoreDeprecatedCodeUnits="true"
             disableCodeCoverageIgnore="true">
-    <!-- ... -->
   </coverage>
-
-<!--  <coverage includeUncoveredFiles="true">-->
-<!--    <include>-->
-<!--      <directory suffix=".php">src</directory>-->
-<!--    </include>-->
-<!--  </coverage>-->
-
 
   <testsuites>
     <testsuite name="all">
