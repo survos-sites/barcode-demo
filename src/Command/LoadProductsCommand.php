@@ -33,12 +33,17 @@ public function __invoke(
     SymfonyStyle $io,
 ): int
 {
+    // purge..
+    foreach ($this->productRepository->findAll() as $product) {
+        $this->entityManager->remove($product);
+    }
+    $this->entityManager->flush();
     foreach (['Rock', 'Paper', 'Scissors'] as $name) {
         if (!$product = $this->productRepository->findOneBy(['name' => $name])) {
-            $product = (new Product())
-                ->setName($name);
+            $product = (new Product());
             $this->entityManager->persist($product);
         }
+        $product->setName($name);
 //        if ($product->getName() !== $product->getId()) {}
     }
     $this->entityManager->flush();

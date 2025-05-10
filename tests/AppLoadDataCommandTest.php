@@ -12,7 +12,7 @@ class AppLoadDataCommandTest extends KernelTestCase
 
     public function test_can_load_products(): void
     {
-        $this->executeConsoleCommand('app:load-products ')
+        $this->executeConsoleCommand('app:load')
             ->assertSuccessful() // command exit code is 0
             ->assertOutputContains('3 products loaded')
             ->assertOutputNotContains('failed')
