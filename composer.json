@@ -125,11 +125,5 @@
         },
         "coverage": "rm products-test.db -f && bin/console d:sc:update --force --env=test && php -d xpcov.enabled=1 vendor/bin/phpunit --coverage-html coverage"
 
-    },
-    "repositories": {
-        "smoke": {
-            "type": "path",
-            "url": "~/g/tacman/SmokeTesting"
-        }
     }
 }
