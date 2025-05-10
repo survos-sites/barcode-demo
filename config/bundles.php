@@ -23,5 +23,8 @@ return [
     Bizkit\VersioningBundle\BizkitVersioningBundle::class => ['all' => true],
     Pierstoval\SmokeTesting\SmokeTestingBundle::class => ['dev' => true, 'test' => true],
     Survos\KeyValueBundle\SurvosKeyValueBundle::class => ['all' => true],
-    Survos\CrawlerBundle\SurvosCrawlerBundle::class => ['all' => true],
+    Survos\CrawlerBundle\SurvosCrawlerBundle::class => ['dev' => true, 'test' => true],
+    Symfony\UX\StimulusBundle\StimulusBundle::class => ['all' => true],
+    Survos\SimpleDatatables\SurvosSimpleDatatablesBundle::class => ['dev' => true, 'test' => true],
+    Ayaou\CommandLoggerBundle\CommandLoggerBundle::class => ['all' => true],
 ];

@@ -1,5 +1,5 @@
 {
-    "|App\\Entity\\User|https://barcode.wip/": {
+    "|https://barcode.wip/": {
         "/": {
             "path": "/",
             "seen": true,

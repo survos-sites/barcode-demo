@@ -15,10 +15,10 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\PropertyAccess\PropertyAccessor;
 
 #[AsCommand(
-    name: 'app:load-products',
+    name: 'app:load',
     description: 'Load a few products for testing',
 )]
-class LoadProductsCommand extends Command
+class LoadProductsCommand
 {
 
     public function __construct(
@@ -26,20 +26,13 @@ class LoadProductsCommand extends Command
         private EntityManagerInterface $entityManager,
         ?string $name = null)
     {
-        parent::__construct($name);
     }
 
-protected
-function configure(): void
-{
-    $this
-        ->addArgument('arg1', InputArgument::OPTIONAL, 'Argument description')
-        ->addOption('option1', null, InputOption::VALUE_NONE, 'Option description');
-}
 
-protected function execute(InputInterface $input, OutputInterface $output): int
+public function __invoke(
+    SymfonyStyle $io,
+): int
 {
-    $io = new SymfonyStyle($input, $output);
     foreach (['Rock', 'Paper', 'Scissors'] as $name) {
         if (!$product = $this->productRepository->findOneBy(['name' => $name])) {
             $product = (new Product())
@@ -50,10 +43,10 @@ protected function execute(InputInterface $input, OutputInterface $output): int
     }
     $this->entityManager->flush();
     // hack for testing getters
-    $accessor = new PropertyAccessor();
-    foreach (['id','name'] as $property) {
-        $accessor->getValue($product, $property);
-    }
+//    $accessor = new PropertyAccessor();
+//    foreach (['id','name'] as $property) {
+////        $accessor->getValue($product, $property);
+//    }
 
     $io->success(sprintf("%d products loaded", $this->entityManager->getRepository(Product::class)->count([])));
 
