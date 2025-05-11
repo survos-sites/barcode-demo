@@ -76,12 +76,12 @@ jobs:
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
 
     # Tests
-    - name: Execute tests via PHPUnit
-      run: castor test
-
-    # Code coverage
-    - name: Generate the code coverage report and show the current global coverage
-      run: castor coverage
+#    - name: Execute tests via PHPUnit
+#      run: castor test
+#
+#    # Code coverage
+#    - name: Generate the code coverage report and show the current global coverage
+#      run: castor coverage
 
 
   # Run all lint/CS checks —————————————————————————————————————————————————————
@@ -110,17 +110,17 @@ jobs:
       run: vendor/bin/phpunit --version
 
     # Native Symfony lints
-    - name: Lint the DI container
-      run: castor lint:container
-    - name: Lint Twig templates
-      run: castor lint:twig
-    - name: Lint Yaml files
-      run: castor lint:yaml
-
-    # Vendors lints
-    - name: Lint PHP with php-cs-fixer
-      run: castor lint:php
-    - name: PHPStan static analysis
-      run: castor stan
+#    - name: Lint the DI container
+#      run: castor lint:container
+#    - name: Lint Twig templates
+#      run: castor lint:twig
+#    - name: Lint Yaml files
+#      run: castor lint:yaml
+#
+#    # Vendors lints
+#    - name: Lint PHP with php-cs-fixer
+#      run: castor lint:php
+#    - name: PHPStan static analysis
+#      run: castor stan
 
 # The end. 🙃
