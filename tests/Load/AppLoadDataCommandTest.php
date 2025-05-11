@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Tests;
+namespace App\Tests\Load;
 
 use App\Command\LoadProductsCommand;
+use PHPUnit\Framework\Attributes\Test;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Zenstruck\Console\Test\InteractsWithConsole;
 
@@ -10,7 +11,8 @@ class AppLoadDataCommandTest extends KernelTestCase
 {
     use InteractsWithConsole;
 
-    public function test_can_load_products(): void
+    #[Test]
+    public function load(): void
     {
         $this->executeConsoleCommand('app:load')
             ->assertSuccessful() // command exit code is 0
