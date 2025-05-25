@@ -111,9 +111,6 @@
     "survos/key-value-bundle": {
         "version": "dev-main"
     },
-    "survos/simple-datatables-bundle": {
-        "version": "1.5.529"
-    },
     "symfony/asset-mapper": {
         "version": "7.3",
         "recipe": {
