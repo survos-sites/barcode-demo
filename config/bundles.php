@@ -25,4 +25,5 @@ return [
     Survos\KeyValueBundle\SurvosKeyValueBundle::class => ['all' => true],
     Survos\CrawlerBundle\SurvosCrawlerBundle::class => ['dev' => true, 'test' => true],
     Symfony\UX\StimulusBundle\StimulusBundle::class => ['all' => true],
+    Inspector\Symfony\Bundle\InspectorBundle::class => ['all' => true],
 ];
