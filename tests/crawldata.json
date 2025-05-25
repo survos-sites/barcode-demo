@@ -8,7 +8,7 @@
             "username": null,
             "route": "monitor.health",
             "rp": null,
-            "statusCode": 200,
+            "statusCode": null,
             "foundOn": null,
             "memory": null
         },
@@ -20,7 +20,7 @@
             "username": null,
             "route": "monitor.internal_health",
             "rp": null,
-            "statusCode": 200,
+            "statusCode": null,
             "foundOn": null,
             "memory": null
         },
@@ -32,7 +32,7 @@
             "username": null,
             "route": "monitor.info",
             "rp": null,
-            "statusCode": 200,
+            "statusCode": null,
             "foundOn": null,
             "memory": null
         },
@@ -44,7 +44,7 @@
             "username": null,
             "route": "monitor.internal_info",
             "rp": null,
-            "statusCode": 200,
+            "statusCode": null,
             "foundOn": null,
             "memory": null
         },
@@ -56,7 +56,7 @@
             "username": null,
             "route": "survos_crawler_data",
             "rp": null,
-            "statusCode": 200,
+            "statusCode": null,
             "foundOn": null,
             "memory": null
         },
@@ -68,7 +68,7 @@
             "username": null,
             "route": "app_homepage",
             "rp": null,
-            "statusCode": 200,
+            "statusCode": null,
             "foundOn": null,
             "memory": null
         }

@@ -26,5 +26,4 @@ return [
     Survos\CrawlerBundle\SurvosCrawlerBundle::class => ['dev' => true, 'test' => true],
     Symfony\UX\StimulusBundle\StimulusBundle::class => ['all' => true],
     Survos\SimpleDatatables\SurvosSimpleDatatablesBundle::class => ['dev' => true, 'test' => true],
-    Ayaou\CommandLoggerBundle\CommandLoggerBundle::class => ['all' => true],
 ];

@@ -10,7 +10,6 @@
         "ext-imagick": "*",
         "ext-pdo_sqlite": "*",
         "ext-sqlite3": "*",
-        "ayaou/command-logger-bundle": "dev-fix/allow-php73-new-command-style",
         "doctrine/doctrine-bundle": "^2.10",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^3.2",
@@ -25,7 +24,7 @@
         "survos/key-value-bundle": "dev-main",
         "symfony/asset": "^7.0",
         "symfony/asset-mapper": "^7.0",
-        "symfony/console": "^7.0",
+        "symfony/console": "^7.3",
         "symfony/doctrine-messenger": "^7.0",
         "symfony/dotenv": "^7.0",
         "symfony/expression-language": "^7.0",
@@ -57,7 +56,7 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^12.1",
-        "pierstoval/smoke-testing": "*@dev",
+        "pierstoval/smoke-testing": "^1.2",
         "survos/command-bundle": "^1.5",
         "survos/crawler-bundle": "dev-main",
         "survos/simple-datatables-bundle": "^1.5",
@@ -82,7 +81,7 @@
     "conflict": {
         "symfony/symfony": "*"
     },
-    "minimum-stability": "beta",
+    "minimum-stability": "rc",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
