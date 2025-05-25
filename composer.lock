@@ -2869,16 +2869,16 @@
         },
         {
             "name": "survos/installer",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/survos/installer.git",
-                "reference": "b026a3896be9cf6a9c0e858ca1164880ab406725"
+                "reference": "5df0cece66d955b2405e90f847ff4f1e51f2667f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/survos/installer/zipball/b026a3896be9cf6a9c0e858ca1164880ab406725",
-                "reference": "b026a3896be9cf6a9c0e858ca1164880ab406725",
+                "url": "https://api.github.com/repos/survos/installer/zipball/5df0cece66d955b2405e90f847ff4f1e51f2667f",
+                "reference": "5df0cece66d955b2405e90f847ff4f1e51f2667f",
                 "shasum": ""
             },
             "require": {
@@ -2917,7 +2917,7 @@
             ],
             "description": "Composer plugin for installing configuration files and updating .env and .gitignore, based on survos/installer",
             "support": {
-                "source": "https://github.com/survos/installer/tree/2.0.5"
+                "source": "https://github.com/survos/installer/tree/2.0.6"
             },
             "funding": [
                 {
@@ -2925,7 +2925,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-18T11:28:46+00:00"
+            "time": "2025-05-25T21:53:47+00:00"
         },
         {
             "name": "survos/key-value-bundle",
