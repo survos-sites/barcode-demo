@@ -8,6 +8,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-imagick": "*",
+        "ext-intl": "*",
         "ext-pdo_sqlite": "*",
         "ext-sqlite3": "*",
         "doctrine/doctrine-bundle": "^2.10",

@@ -22,6 +22,8 @@ framework:
         # ...
 #        default_uri: 'https://barcode-demo.survos.com/'
         default_uri: 'https://barcode.wip/'
+    property_info:
+        with_constructor_extractor: true
 
 #when@dev:
 #    router:

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de80111623381fdc69f65f0a4da4cfe3",
+    "content-hash": "9270c525ec1cc63fdcb44b7b62b00177",
     "packages": [
         {
             "name": "bizkit/versioning-bundle",
@@ -11660,6 +11660,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-imagick": "*",
+        "ext-intl": "*",
         "ext-pdo_sqlite": "*",
         "ext-sqlite3": "*"
     },
