@@ -1,4 +1,7 @@
 {
+    "ayaou/command-logger-bundle": {
+        "version": "v1.5.1"
+    },
     "bizkit/versioning-bundle": {
         "version": "1.2",
         "recipe": {
@@ -351,6 +354,15 @@
             "config/packages/twig.yaml",
             "templates/base.html.twig"
         ]
+    },
+    "symfony/uid": {
+        "version": "7.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "7.0",
+            "ref": "0df5844274d871b37fc3816c57a768ffc60a43a5"
+        }
     },
     "symfony/ux-icons": {
         "version": "2.25",
