@@ -2,18 +2,6 @@
     "ayaou/command-logger-bundle": {
         "version": "v1.5.1"
     },
-    "bizkit/versioning-bundle": {
-        "version": "1.2",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "main",
-            "version": "1.0",
-            "ref": "ecb844d4e78c7e1834fb360fbb4d3846da02e581"
-        },
-        "files": [
-            "config/packages/bizkit_versioning.yaml"
-        ]
-    },
     "doctrine/deprecations": {
         "version": "1.1",
         "recipe": {
@@ -99,6 +87,9 @@
     },
     "survos/bootstrap-bundle": {
         "version": "1.5.529"
+    },
+    "survos/code-bundle": {
+        "version": "1.5.602"
     },
     "survos/command-bundle": {
         "version": "1.5",

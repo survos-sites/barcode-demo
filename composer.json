@@ -61,6 +61,7 @@
     "require-dev": {
         "phpunit/phpunit": "^12.1",
         "pierstoval/smoke-testing": "^1.2",
+        "survos/code-bundle": "^1.5",
         "survos/command-bundle": "^1.5",
         "survos/crawler-bundle": "dev-main",
         "symfony/browser-kit": "^7.0",
