@@ -24,7 +24,6 @@ class AppController extends AbstractController
 
     #[Route('/', name: 'app_homepage', methods: [Request::METHOD_GET])]
     public function index(Request $request,
-                          KeyValueManagerInterface $kvManager,
                           ProductRepository $productRepository): Response
     {
 

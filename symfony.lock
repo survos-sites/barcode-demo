@@ -129,9 +129,6 @@
     "survos/deployment-bundle": {
         "version": "dev-main"
     },
-    "survos/key-value-bundle": {
-        "version": "dev-main"
-    },
     "symfony/asset-mapper": {
         "version": "7.3",
         "recipe": {
