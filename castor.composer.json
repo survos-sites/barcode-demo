@@ -1,0 +1,22 @@
+{
+    "name": "barcode-demo/castor",
+    "description": "Castor commands for project barcode-demo",
+    "type": "castor-project",
+    "require-dev": {
+        "symfony/console": "^7.3@beta"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BarcodeDemo\\Castor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tac Tacelosky",
+            "email": "tacman@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
