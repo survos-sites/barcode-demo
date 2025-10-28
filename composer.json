@@ -56,6 +56,7 @@
     "require-dev": {
         "phpunit/phpunit": "^12.1",
         "pierstoval/smoke-testing": "^1.2",
+        "survos/code-bundle": "*",
         "survos/command-bundle": "^2.0",
         "survos/crawler-bundle": "^2.0",
         "survos/deployment-bundle": "^2.0",
