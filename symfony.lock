@@ -53,9 +53,6 @@
     "knplabs/knp-menu-bundle": {
         "version": "v3.5.0"
     },
-    "openconext/monitor-bundle": {
-        "version": "4.3.1"
-    },
     "phpunit/phpunit": {
         "version": "12.3",
         "recipe": {
@@ -122,9 +119,6 @@
         ]
     },
     "survos/deployment-bundle": {
-        "version": "dev-main"
-    },
-    "survos/key-value-bundle": {
         "version": "dev-main"
     },
     "symfony/asset-mapper": {
