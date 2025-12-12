@@ -27,7 +27,7 @@ class AppController extends AbstractController
                           ProductRepository $productRepository): Response
     {
 
-        $string = $request->get('q', 'abcdefg');
+        $string = $request->query->get('q', 'abcdefg');
         $products = $productRepository->findAll();
 
         $extensionCheck  = array_reduce(['gd', 'imagick'], function(array $carry, $ext) {

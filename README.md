@@ -1,5 +1,9 @@
 # barcode-demo
 
+Still on 7.4 because of symfony/panther
+
+
+
 Demonstrates survos/barcode-bundle, also uses survos/bootstrap-bundle and survos/scraper-bundle
 
 See the demo https://barcode-demo.survos.com/
@@ -9,7 +13,7 @@ See the demo https://barcode-demo.survos.com/
 ### Run the demo locally
 
 ```bash
-git clone git@github.com:survos-sites/barcode-demo.git && cd barcode-demo 
+git clone git@github.com:survos-sites/barcode-demo.git && cd barcode-demo
 composer install
 bin/console doctrine:schema:update --force
 bin/console app:load -n
@@ -38,7 +42,7 @@ symfony open:local --path="/info"
 symfony open:local --path="/internal/health"
 read -p "press any key to delete the database" -n 1 -s
 rm products.db
-symfony open:local 
+symfony open:local
 symfony open:local --path="/internal/health"
 
 ```
@@ -56,7 +60,7 @@ docker compose up -d
 #symfony console doctrine:migrations:migrate -n
 #symfony console app:load-products
 # if using symfony proxy
-#symfony proxy:domain:attach barcode-demo 
+#symfony proxy:domain:attach barcode-demo
 #symfony server:start -d
 # open https://barcode-demo.wip or https://localhost:8000 (or whatever the next port is)
 ```
@@ -76,7 +80,7 @@ Base on https://medium.com/@dotcom.software/serving-resized-s3-images-on-the-fly
 
 docker-compose exec php sh
 
-Demo for barcode-bundle [survos/barcode-bundle](https://github.com/survos/BarcodeBundle), a Symfony bundle that exposes the methods of picqer/php-barcode-generator.  
+Demo for barcode-bundle [survos/barcode-bundle](https://github.com/survos/BarcodeBundle), a Symfony bundle that exposes the methods of picqer/php-barcode-generator.
 
 ## Run This Demo Locally
 
@@ -86,7 +90,7 @@ Demo for barcode-bundle [survos/barcode-bundle](https://github.com/survos/Barcod
 * PHP 8
 * Symfony Server (for local testing)
 
-### 
+###
 
 To auto-update this readme and other docs, see
 https://www.linkedin.com/pulse/how-easily-include-file-content-your-github-readmemd-stijn-dejongh/
@@ -94,10 +98,10 @@ See https://askubuntu.com/questions/992448/how-to-execute-a-bash-script-from-git
 
 ### Setup
 
-These are the steps to recreate this demo locally. 
+These are the steps to recreate this demo locally.
 
 ```bash
-DIR=barcode-demo && mkdir $DIR && cd $DIR && symfony new --version=next --webapp . 
+DIR=barcode-demo && mkdir $DIR && cd $DIR && symfony new --version=next --webapp .
 composer config extra.symfony.allow-contrib true
 symfony server:start -d
 composer req survos/maker-bundle --dev
@@ -120,7 +124,7 @@ END
 echo "import 'bootstrap/dist/css/bootstrap.min.css'" >> assets/app.js
 echo "import 'bootstrap'" >> assets/app.js
 
-bin/console survos:make:menu App 
+bin/console survos:make:menu App
 bin/console survos:make:command app:import-countries "Import the countries into a database" -q
 
 echo "name,string,55,no," | sed "s/,/\n/g"  | bin/console make:entity Country
@@ -185,7 +189,7 @@ git diff src/Command
 
 
 ```
-    
+
 We need an entity class, we're going to use Country, and populate the table using Symfony's intl component.  We'll need a database, if you're running locally and have sqlite installed, use that.  Or any database that Doctrine supports.  Later we'll move this to postgres for heroku.  By default, Symfony assumes you're using a mysql database, so change it in .env.local
 
 
@@ -207,7 +211,7 @@ cat <<'EOF' > $snippet_file
 public function test(): void {}
 EOF
 
-cat <<'EOF' > 
+cat <<'EOF' >
 // src/Service/XService.php
 public function test(): void {}
 EOF
@@ -224,7 +228,7 @@ cat $snippet_file
 : ...
 rm "$tmpfile"
 
-cat <<'EOF' > 
+cat <<'EOF' >
 // src/Service/XService.php
 public function test(): void {}
 EOF
@@ -243,15 +247,15 @@ echo "x" | bin/console make:method
     bin/console make:entity Country
        # name, string, 55, no (not nullable)
        # alpha2, string, 2, no (not nullable)
-       
+
     bin/console doctrine:schema:update --force
 
     composer require make orm-fixtures --dev
-    composer require symfony/intl 
+    composer require symfony/intl
 
     bin/console make:fixtures CountryFixtures
-    
-Loading the database is trivial, 
+
+Loading the database is trivial,
 
 ```
 use Symfony\Component\Intl\Countries;
@@ -276,7 +280,7 @@ class CountryFixtures extends Fixture
 Load the countries
 
 ```bash
-symfony console doctrine:fixtures:load -n 
+symfony console doctrine:fixtures:load -n
 ```
 
 It relies on bootstrap and jquery, loaded via Webpack Encore.  Although this is more setup than simply loading those libraries from a CDN, it is also a best practice and more representative of a real-world application.
@@ -284,13 +288,13 @@ It relies on bootstrap and jquery, loaded via Webpack Encore.  Although this is 
 ```bash
 composer req symfony/webpack-encore-bundle && yarn install
 ```
-`    
+`
 Get bootstrap and jquery
 
 ```bash
 yarn add bootstrap jquery select2@4.0.6 @popperjs/core
 ```
-    
+
 and add them to app.js and app.css to make them global.  The select2 configuration is all done in PHP (via data-* attributes) so we will simply initialize the appropriate elements here.
 
 ```javascript
@@ -327,7 +331,7 @@ yarn run encore dev
 This helper bundle gives us a basic landing page, a base that loads the assets, and some menus.
 
     composer require survos/bootstrap-bundle
-    
+
 Replace base.html.twig so that it extends the base from the landing bundle.  This will load the css and javascript from the compiled webpack.
 
 echo '{% extends "@SurvosBootstrap/sneat/base.html.twig" %}' >templates/base.html.twig
@@ -338,16 +342,16 @@ echo '{% extends "@SurvosBootstrap/sneat/base.html.twig" %}' >templates/base.htm
 Now we've got a basic website with an entity, and we want to create some pages and forms.
 
     composer req tetranz/select2entity-bundle
-    
-Update twig.yaml to include rendering select2 
+
+Update twig.yaml to include rendering select2
 
 ```yaml
     form_themes:
         - 'bootstrap_4_horizontal_layout.html.twig'
-        - '@TetranzSelect2Entity/Form/fields.html.twig'    
-```    
+        - '@TetranzSelect2Entity/Form/fields.html.twig'
+```
 
-### Create a Form and Add the country field    
+### Create a Form and Add the country field
 
 ```bash
 
@@ -415,7 +419,7 @@ The autocomplete ajax call is a simple query, using the repository created in ma
     }
 ```
 
-Of course, you need a route to land on, then you'll instanciate the form and send it to be rendered in a twig template.  
+Of course, you need a route to land on, then you'll instanciate the form and send it to be rendered in a twig template.
 
 ```php
 // add to AppController.php
@@ -454,12 +458,12 @@ Initialize heroku and add a database
 Add node to buildpack
 
     heroku buildpacks:add heroku/nodejs
-    git push heroku main  
-    
+    git push heroku main
+
 Add Sentry to make your life easier!
 
 
-      
+
 
 
 

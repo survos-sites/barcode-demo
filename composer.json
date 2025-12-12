@@ -17,6 +17,7 @@
         "endroid/installer": "^1.5",
         "inspector-apm/inspector-symfony": "^1.8",
         "nette/php-generator": "^4.1",
+        "pierstoval/smoke-testing": "dev-main",
         "survos/barcode-bundle": "^2.0",
         "survos/bootstrap-bundle": "^2.0",
         "symfony/asset": "^7.3 | ^8.0",
@@ -53,8 +54,8 @@
         "twig/twig": "^3.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "phpunit/phpunit": "^12.1",
-        "pierstoval/smoke-testing": "^1.2",
         "survos/code-bundle": "*",
         "survos/command-bundle": "^2.0",
         "survos/crawler-bundle": "^2.0",
@@ -105,8 +106,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": "true",
-            "require": "^7.3"
+            "allow-contrib": "true"
         }
     },
     "scripts": {
