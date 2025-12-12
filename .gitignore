@@ -23,3 +23,7 @@
 ###< survos/flickr-bundle ###
 
 /coverage
+
+###> phpstan/phpstan ###
+phpstan.neon
+###< phpstan/phpstan ###
